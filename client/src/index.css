@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(218, 11%, 65%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 5%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 5%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(245, 83%, 61%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(45, 93%, 47%);
+  --secondary-foreground: hsl(222, 84%, 5%);
+  --accent: hsl(158, 64%, 52%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(245, 83%, 61%);
+  --radius: 0.5rem;
+  --trust: hsl(217, 91%, 60%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 5%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(245, 83%, 61%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(45, 93%, 47%);
+  --secondary-foreground: hsl(222, 84%, 5%);
+  --accent: hsl(158, 64%, 52%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(245, 83%, 61%);
+  --trust: hsl(217, 91%, 60%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-poppins antialiased bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-trust {
+  color: var(--trust);
+}
+
+.bg-trust {
+  background-color: var(--trust);
+}
+
+.bg-trust\/10 {
+  background-color: hsl(217, 91%, 60%, 0.1);
+}
+
+.bg-accent\/10 {
+  background-color: hsl(158, 64%, 52%, 0.1);
+}
+
+.bg-secondary\/10 {
+  background-color: hsl(45, 93%, 47%, 0.1);
+}
+
+.bg-primary\/10 {
+  background-color: hsl(245, 83%, 61%, 0.1);
+}
+
+.hover\:bg-primary\/90:hover {
+  background-color: hsl(245, 83%, 61%, 0.9);
+}
+
+.hover\:bg-secondary\/90:hover {
+  background-color: hsl(45, 93%, 47%, 0.9);
+}
+
+.hover\:bg-accent\/90:hover {
+  background-color: hsl(158, 64%, 52%, 0.9);
+}
